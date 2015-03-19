@@ -4,13 +4,15 @@ var programmers = [
 { name: "Zaphod", occupation: "President of the Galaxy" }
 ];
 
-// $(document).ready(function() {
-
-// }
-
 var jsButton = document.getElementById("javascript-button");
-var javascriptFunction = function (arrayOfProgrammers) {
-  console.log ("hello");
+var javascriptFunction = function () {
+  var averageAwesome = 0;
+  for (var i = 0; i < programmers.length; i++) {
+    if (programmers[i]["awesomeIndex"]){
+      averageAwesome += programmers[i]["awesomeIndex"];
+    }
+  }
+document.getElementById("awesome-index").innerHTML = averageAwesome;
 };
 
 jsButton.addEventListener("click", javascriptFunction, false);
