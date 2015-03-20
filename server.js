@@ -1,12 +1,11 @@
 var http = require("http");
+var fs = require("fs");
+var index = fs.readFileSync("./app/index.html");
 
 var server = http.createServer(function(req, res) {
-    res.writeHead(200);
-    res.write("<p>Hello world!</p>");
+    res.writeHead(200, {"Content-Type": "text/html"});
+    res.write(index);
     res.end();
 });
 
-var port = 3000;
-server.listen(port, function() {
-    console.log("server listening on port " + port);
-});
+server.listen(3000);
