@@ -5,7 +5,8 @@ var programmers = [
 { name: "Alice", ccupation: "programmer", awesomeIndex: 5, },
 { name: "Joe", ccupation: "programmer", awesomeIndex: 4, },
 { name: "Bob", ccupation: "programmer", awesomeIndex: 10, },
-{ name: "July", ccupation: "programmer", awesomeIndex: 1, }
+{ name: "July", ccupation: "programmer", awesomeIndex: 1, },
+{ name: "Megan", occupation: "plumber" }
 ];
 
 var jsButton = document.getElementById("javascript-button");
@@ -17,7 +18,7 @@ var javascriptFunction = function () {
     if (programmers[i]["awesomeIndex"]){
       divisor++;
       sumAverageAwesome += programmers[i]["awesomeIndex"];
-      averageAwesome = sumAverageAwesome/divisor;git s
+      averageAwesome = sumAverageAwesome/divisor;
     }
   }
 document.getElementById("awesome-index").innerHTML = averageAwesome;
