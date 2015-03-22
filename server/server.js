@@ -11,5 +11,5 @@ var server = http.createServer(function (req, res) {
 server.listen(3000);
 
 server.on("error", function (e) {
-    console.eror("Error: " + e);
+    console.error("There is an error in your file: " + e);
 });
