@@ -1,4 +1,4 @@
-// creat library constructor function
+// create library constructor function
 var Library = function (branch) {
   // add branch key
   this.branch = branch;
@@ -95,5 +95,6 @@ ballardLibrary.addShelf(scienceFiction);
 nineteenthCenturyBritishLit.removeBook(thePortraitOfALady);
 // list shelves in library
 ballardLibrary.listShelves();
+// list books on shelves
 nineteenthCenturyBritishLit.listBooks();
 scienceFiction.listBooks();
